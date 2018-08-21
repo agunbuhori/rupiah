@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ededed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding: 30px;
+    background-color: #36BE60;
+    width: 60%;
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.inputNominal {
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #F7F4E7;
+    color: #000;
+    text-align: right;
+}
+
+.denominationResult {
+    width: 100%;
+    padding: 15px;
+    background-color: #F7F4E7;
+    margin-top: 15px;
+    overflow: auto
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+    min-height: 1px;
+}
+
+.fractionGrid {
+    width: 33.33%;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.fractionItem {
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.fractionAmount {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.fractionAmount > h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #CB3838;
+}
+
+.fractionAmount > span {
+    font-size: 12px;
+    color: #CB3838;
+}
+
+.fractionNominal {
+    width: 70%;
+    padding: 15px 10px;
+    float: left;
+    display: inline-block;
+}
+
+.fractionNominal > h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.invalidNominal {
+    width: 100%;
+    padding: 15px;
+    background-color: #AC0000;
+    color: #fff;
+}
+
+.leftFraction {
+     width: 100%;
+    padding: 15px;
+    background-color: #FFC400;
+    color: #fff;
+}
+
+.leftFraction h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    .fractionGrid {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    .fractionGrid {
+        width: 100%;
+    }
+}
