@@ -1,28 +1,14 @@
 <h1>Rupiah Redenomination</h1>
 
-Cross-browser CSS customizable scrollbar with advanced features:
-<ul>
-    <li>Easy to implement</li>
-    <li>No fixed height or width</li>
-    <li>Responsive design support</li>
-    <li>CSS customizable</li>
-    <li>Standard scroll behavior</li>
-    <li>Vertical, horizontal or both scrollbars</li>
-    <li>Automatically reinitialize scrollbar</li>
-    <li>External scrollbars support</li>
-    <li>Browser support: IE7+, Firefox<sup>1</sup>, Opera, Chrome, Safari</li>
-    <li>jQuery Scrollbar as Angular.JS directive</li>
-    <li>Textarea scrollbar</li>
-    <li>RTL support<sup>2</sup></li>
-</ul>
+Simple application that given a number of rupiahs will calculate the minimum number of rupiahs needed to make that amount 
 
-<h4><a href="http://gromo.github.io/jquery.scrollbar/demo/basic.html">Basic Scrollbars Demo</a></h4>
-<h4><a href="http://gromo.github.io/jquery.scrollbar/demo/advanced.html">Advanced Scrollbars Demo</a></h4>
-<h4><a href="http://gromo.github.io/jquery.scrollbar/demo/angular.html">jQuery Scrollbar as Angular.JS directive</a></h4>
+example :
+15000 = 1 x Rp10000, 1x Rp5000
+Rp3900 = 1x Rp2000, 1x Rp1000, 1x Rp500, 4x Rp100
+12510 = 1 x Rp10000, 1x Rp2000, 1x Rp500, left Rp10 (no available fraction)
 
-<h4><a href="http://gromo.github.io/jquery.scrollbar/">Documentation</a></h4>
-<h4><a href="https://github.com/gromo/jquery.scrollbar/blob/master/CHANGELOG.md">Changelog</a></h4>
-<h4><a href="https://github.com/gromo/jquery.scrollbar/archive/gh-pages.zip">Download</a></h4>
+Examples of valid inputs with their canonical equivalents 18.215 (18215), Rp17500 (17500), Rp17.500,00 (17500), Rp 120.325 (120325), 005.000 (5000), 001000 (1000)
 
-<sup>1</sup> There is known issue that native browser scrollbar cannot be hidden in Firefox on Apple devices, so this plugin is not initialized and you will see native scrollbars.
-<sup>2</sup> Experimental support in master branch, styles for scrollbars are not updated
+Examples of invalid inputs: 17,500 (invalid separator),  2 500(invalid separator), 3000 Rp (valid character in wrong position), Rp (missing value)
+
+Account for only available current rupiah fractions 100000, 50000, 20000, 10000, 5000, 1000, 500, 100 and 50. 
