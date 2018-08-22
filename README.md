@@ -20,20 +20,24 @@ Application built using React. To run this application, you need to install <b>n
 
 ## Installation Steps
 
-# 1. Clone project
+### 1. Clone project
 Clone the project from github repository and navigate terminal to the project directory
 ```bash
 $ git clone https://github.com/agunbuhori/rupiah.git
 $ cd {YOUR_DIRECTORY}/rupiah
 ```
 
-# 2. Run / compile project
+### 2. Run / compile project
 Run or compile the project by using the <b>npm</b>
 ```bash
 $ npm run dev
 or
 $ npm run build
 ```
+if you get an error when running the command, maybe because there are several modules missing. You only need to install the module with the command:
+```bash
+$ npm i
+```
 
-# 3. Run compile result
+### 3. Run compile result
 Open the <b>index.html</b> file in the <b>dist</b> folder, then open the file using a web browser.

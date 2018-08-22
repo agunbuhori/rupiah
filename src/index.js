@@ -85,7 +85,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="wrapper">
-          <img className="logo" src="./tokopedia.svg" width="200px"/>
+          <img className="logo" src="http://demo.buhori.com/tokopedia.svg" width="200px"/>
 
           {/* Input here */}
           <input className="inputNominal" onChange={this.inputNominal.bind(this)} placeholder="Input nominal here"/>
