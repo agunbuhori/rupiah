@@ -59,7 +59,7 @@ class App extends React.Component {
                       <h1>{fraction.count}</h1>
                       <span>fraction</span>
                     </div>
-                    <div className="fractionNominal"><h1>{fraction.nominal}</h1></div>
+                    <div className="fractionNominal"><h1>Rp{fraction.nominal}</h1></div>
                   </div>
                 </div>
               );
@@ -68,7 +68,7 @@ class App extends React.Component {
           </div>
             
           <div className="leftFraction">
-            <h1>{this.state.leftFraction > 0 ? this.state.leftFraction + " is not in fractions" : "There is no nominal remainder"}</h1>
+            <h1>{this.state.leftFraction > 0 ? "Rp"+this.state.leftFraction + " no available fraction" : "There is no nominal remainder"}</h1>
           </div>
 
         </div>
@@ -79,18 +79,24 @@ class App extends React.Component {
         <div className="invalidNominal">
           You enter the wrong nominal format, Examples of valid inputs with their canonical equivalents 18.215 (18215), Rp17500 (17500), Rp17.500,00 (17500), Rp 120.325 (120325), 005.000 (5000), 001000 (1000)
         </div>
-      )
+      );
   }
 
   render() {
     return (
       <div className="container">
-        <img src="./tokopedia.png"/>
+        <div className="wrapper">
+          <img className="logo" src="./tokopedia.svg" width="200px"/>
 
-        {/* Input here */}
-        <input className="inputNominal" onChange={this.inputNominal.bind(this)} placeholder="Input nominal here"/>
+          {/* Input here */}
+          <input className="inputNominal" onChange={this.inputNominal.bind(this)} placeholder="Input nominal here"/>
 
-        {this.getResultView()}
+          {this.getResultView()}
+        </div>
+
+        <p className="footerText">
+          Copyrights &copy; 2018 - Agun Buhori | Impressive Developer - <a href="https://agun.buhori.com" target="_blank">https://agun.buhori.com</a>
+        </p>
       </div>
     );
   }
