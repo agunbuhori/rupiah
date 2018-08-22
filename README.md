@@ -15,6 +15,7 @@ Account for only available current rupiah fractions 100000, 50000, 20000, 10000,
 
 <h2>How to run this application?</h2>
 Application built using React. To run this application, you need to install <b>npm</b> on your computer.
+<b>Demo : </b> <a href="http://demo.buhori.com/" target="_blank">http://demo.buhori.com/</a>
 
 ## Installation Steps
 
