@@ -14,4 +14,24 @@ Examples of invalid inputs: 17,500 (invalid separator),  2 500(invalid separator
 Account for only available current rupiah fractions 100000, 50000, 20000, 10000, 5000, 1000, 500, 100 and 50. 
 
 <h2>How to run this application?</h2>
-This application is built using <b>React JS</b> and does not use any server side programming language. You only need to install the <b>webpack</b> and <b>npm</b> to be able to run the source code.
+Application built using React. To run this application, you need to install <b>npm</b> on your computer.
+
+## Installation Steps
+
+# 1. Clone project
+Clone the project from github repository and navigate terminal to the project directory
+```bash
+$ git clone https://github.com/agunbuhori/rupiah.git
+$ cd {YOUR_DIRECTORY}/rupiah
+```
+
+# 2. Run / compile project
+Run or compile the project by using the <b>npm</b>
+```bash
+$ npm run dev
+or
+$ npm run build
+```
+
+# 3. Run compile result
+Open the <b>index.html</b> file in the <b>dist</b> folder, then open the file using a web browser.

@@ -11,7 +11,6 @@ class App extends React.Component {
     this.state = {
       nominal: "",
       fractionResult: [],
-      leftFraction: 0,
       status: 0,
     }
   }
@@ -30,8 +29,8 @@ class App extends React.Component {
       if (fractionParser.status === 'success') {
         this.setState({
           status: 1,
-          fractionResult: fractionParser.data.countedFraction,
-          leftFraction: fractionParser.data.leftFraction
+          fractionResult: fractionParser.data.countedFractions,
+          lastNominal: fractionParser.data.lastNominal
         });
       } else if (fractionParser.status === 'failed') {
         this.setState({
@@ -68,7 +67,7 @@ class App extends React.Component {
           </div>
             
           <div className="leftFraction">
-            <h1>{this.state.leftFraction > 0 ? "Rp"+this.state.leftFraction + " no available fraction" : "There is no nominal remainder"}</h1>
+            <h1>{this.state.lastNominal > 0 ? "Rp"+this.state.lastNominal + " no available fraction" : "There is no nominal remainder"}</h1>
           </div>
 
         </div>
