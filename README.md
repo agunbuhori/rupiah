@@ -21,10 +21,11 @@ Application built using React. To run this application, you need to install <b>n
 ## Installation Steps
 
 ### 1. Clone project
-Clone the project from github repository and navigate terminal to the project directory
+Navigate to the terminal / cmd location to copy this project, and clone the project from github repository.
 ```bash
+$ cd {YOUR_DIRECTORY}
 $ git clone https://github.com/agunbuhori/rupiah.git
-$ cd {YOUR_DIRECTORY}/rupiah
+$ cd rupiah
 ```
 
 ### 2. Run / compile project
