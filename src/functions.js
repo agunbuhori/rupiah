@@ -41,7 +41,7 @@ class FractionParser {
     /**
      * Get parsed fractions
      * 
-     * @return array
+     * @return void
      */
     getFractions() {
         // check the fractions from max to min by loop
@@ -62,7 +62,7 @@ class FractionParser {
     /**
      * Start parsing process
      * 
-     * @return void
+     * @return array
      */
     doParse() {
         // if currency is valid format, clean currency and do parsing
